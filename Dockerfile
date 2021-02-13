@@ -3,6 +3,7 @@ FROM python:3.6.4-alpine3.7
 RUN apk add --no-cache git
 
 ENV BASE_URL=https://thepiratebay.org/
+ENV GUNICORN_CMD_ARGS=
 
 COPY requirements.txt requirements.txt
 
